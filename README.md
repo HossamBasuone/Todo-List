@@ -1,4 +1,4 @@
-<img width="1917" height="1073" alt="image" src="https://github.com/user-attachments/assets/ecc40487-c7af-4afd-adaf-603480413ecd" />✅ TaskFlow — Todo List App
+✅ TaskFlow — Todo List App
 
 Small steps, big achievements.
 
@@ -9,8 +9,7 @@ Personal Note: I developed this project during my military service, using my fre
 📸 Screenshot
 
 !TaskFlow Todo List Screenshot
-
-<img width="1917" height="1073" alt="image" src="https://github.com/user-attachments/assets/8b09f471-9111-4c0d-ae76-965f4aaa7de5" />
+<img width="1917" height="1073" alt="image" src="https://github.com/user-attachments/assets/2f20f3cb-df6c-400b-ac8a-d51779c60316" />
 
 
 TaskFlow — Organize your day, one task at a time.
