@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6366f1">
+
+    <title>My Todo List</title>
+
+    <link rel="stylesheet" href="css.css">
+    <script src="js.js" defer></script>
+</head>
+
+<body>
+    <main class="app">
+        <header class="header">
+            <div class="brand">
+                <span class="brand-icon">✓</span>
+                <span>TaskFlow</span>
+            </div>
+
+            <p class="subtitle">Small steps, big achievements.</p>
+            <h1>My Tasks</h1>
+            <p class="description">Organize your day, one task at a time.</p>
+        </header>
+
+        <section class="stats" aria-label="Task statistics">
+            <article class="stat-card">
+                <span class="stat-icon">📋</span>
+                <div>
+                    <p>Total tasks</p>
+                    <strong id="total-count">0</strong>
+                </div>
+            </article>
+
+            <article class="stat-card">
+                <span class="stat-icon">✅</span>
+                <div>
+                    <p>Completed</p>
+                    <strong id="completed-count">0</strong>
+                </div>
+            </article>
+
+            <article class="stat-card">
+                <span class="stat-icon">⏳</span>
+                <div>
+                    <p>Remaining</p>
+                    <strong id="remaining-count">0</strong>
+                </div>
+            </article>
+        </section>
+
+        <section class="task-panel">
+            <form id="todo-form" class="add-form">
+                <label for="todo-input">Add a new task</label>
+
+                <div class="input-row">
+                    <input
+                        type="text"
+                        id="todo-input"
+                        placeholder="e.g. Read a book #learning"
+                        maxlength="200"
+                        autocomplete="off"
+                        required
+                    >
+
+                    <button type="submit" class="add-button">
+                        <span>+</span> Add task
+                    </button>
+                </div>
+
+                <p class="hint">
+                    Tip: Add hashtags such as #work, #health, or #study.
+                </p>
+            </form>
+
+            <div class="toolbar">
+                <div class="search-box">
+                    <span aria-hidden="true">⌕</span>
+                    <input
+                        type="search"
+                        id="search"
+                        placeholder="Search tasks..."
+                        aria-label="Search tasks"
+                    >
+                </div>
+
+                <label class="filter-label" for="select">
+                    <span>Show:</span>
+                    <select id="select">
+                        <option value="all">All tasks</option>
+                        <option value="completed">Completed</option>
+                        <option value="uncompleted">Uncompleted</option>
+                    </select>
+                </label>
+            </div>
+
+            <div id="active-filter" class="active-filter" hidden>
+                <span id="filter-description"></span>
+                <button type="button" id="clear-filter">
+                    Clear filters ×
+                </button>
+            </div>
+
+            <div class="list-heading">
+                <h2>Your task list</h2>
+                <span id="visible-count">0 tasks</span>
+            </div>
+
+            <ul id="todos" aria-label="Todo items"></ul>
+
+            <div id="empty-state" class="empty-state" hidden>
+                <div class="empty-icon">📝</div>
+                <h3 id="empty-title">No tasks yet</h3>
+                <p id="empty-description">
+                    Add your first task and get started!
+                </p>
+            </div>
+
+            <footer class="panel-footer">
+                <span id="progress-text">0% completed</span>
+
+                <button type="button" id="clear-completed" class="text-button">
+                    Clear completed
+                </button>
+            </footer>
+
+            <div class="progress-track" aria-label="Task completion progress">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+        </section>
+
+        <p class="footer-note">
+            Built for better days ✨
+        </p>
+    </main>
+</body>
+</html>
